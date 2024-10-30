@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Mi Proyecto</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Herramientas de Despliegue</title>
 </head>
 <body>
-    <div class="menu" id="menu">
-        <h2>Herramientas de Despliegue</h2>
-        <ul>
-            <li><a href="#" onclick="mostrarInformacion('github')">GitHub Pages</a></li>
-            <li><a href="#" onclick="mostrarInformacion('netlify')">Netlify</a></li>
-            <li><a href="#" onclick="mostrarInformacion('vercel')">Vercel</a></li>
-            <li><a href="#" onclick="mostrarInformacion('wix')">Wix</a></li>
-            <li><a href="#" onclick="mostrarInformacion('wordpress')">WordPress.com</a></li>
-            <li><a href="#" onclick="mostrarInformacion('google')">Google Sites</a></li>
-            <li><a href="#" onclick="mostrarInformacion('cloudflare')">Cloudflare Pages</a></li>
-            <li><a href="#" onclick="mostrarInformacion('carrd')">Carrd</a></li>
-        </ul>
+    <div id="bienvenida" class="bienvenida">
+        <h1>Bienvenido a Mi Proyecto</h1>
+        <h2>Para creación de sitios web estáticos mediante herramientas en linea.</h2>
     </div>
-    
-    <div class="contenido" id="contenido">
-        <h1>Información de Herramientas</h1>
-        <div id="informacion"></div>
-        <button id="volver" style="display:none;" onclick="volverAlMenu()">Volver al Menú</button>
+
+    <div id="menu" class="menu">
+        <a href="#" onclick="mostrarInformacion('github')">1. GitHub Pages</a>
+        <a href="#" onclick="mostrarInformacion('netlify')">2. Netlify</a>
+        <a href="#" onclick="mostrarInformacion('vercel')">3. Vercel</a>
+        <a href="#" onclick="mostrarInformacion('wix')">4. Wix</a>
+        <a href="#" onclick="mostrarInformacion('wordpress')">5. WordPress.com</a>
+        <a href="#" onclick="mostrarInformacion('google')">6. Google Sites</a>
+        <a href="#" onclick="mostrarInformacion('cloudflare')">7. Cloudflare Pages</a>
+        <a href="#" onclick="mostrarInformacion('carrd')">8. Carrd</a>
+    </div>
+
+    <div id="informacion" class="informacion">
+        <button id="volver" class="boton-volver" onclick="volverAlMenu()">Volver al Menú</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <div class="informacion-fija">
+        <p>Nombre: Valeria López Cisneros | Número de control: 20050200 | Carrera: Ingeniería de Sistemas Computacionales</p>
     </div>
 
     <script src="script.js"></script>
