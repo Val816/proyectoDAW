@@ -1,40 +1,130 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a Mi Proyecto</title>
+    <title>Menú</title>
     <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
 </head>
 <body>
-    <div id="bienvenida" class="bienvenida">
-        <h1>Bienvenido a Mi Proyecto</h1>
-        <h2>Para creación de sitios web estáticos mediante herramientas en linea.</h2>
+    <header class="hero">
+        <div class="container">
+        <nav class="nav" id="navbar">
+            <a href="mailto:valerylopez816@gmail.com" class="nav__items nav__items--cta">Contacto</a>
+            <a href="#sobre-mi" class="nav__items">Sobre mi</a>
+            <a href="Proyectos.html" class="nav__items">Proyectos</a>
+        </nav>
+        <section class="hero__container">
+            <div class="hero__texts">
+                <h1 class="hero__title">Desarrollo de Aplicaciones Web</h1>
+                <h2 class="hero__subtitle">Hola, Bienvenidos</h2>
+            </div>
+        </section>
+        </div>
+        <div class="hero__wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+    <main>
+        <section class="about">
+            <figure class="about__img about__img--left">
+                <img src="../ProyectoDA/img/img1.jpg" class="about__picture" alt="Descripción de la imagen">
+            </figure>
+
+            <div class="about__texts">
+                <h2 class="subtitle">Definición</h2>
+                <p class="about__paragraph">El desarrollo de aplicaciones web es el proceso de diseñar, construir, probar e implementar aplicaciones que se instalan en servidores remotos y se utilizan a través de Internet. 
+</p>
+<p class="about__paragraph">Las aplicaciones web son programas que se ejecutan en el navegador web y no requieren instalación en dispositivos locales. Esto las hace accesibles desde cualquier lugar con conexión a Internet.Para desarrollar aplicaciones web, se utilizan lenguajes como HTML, CSS y JavaScript. 
+</p>
+                <p class="about__paragraph">Los desarrolladores web deben estudiar las necesidades del cliente y crear una interfaz atractiva con funcionalidades para el usuario.</p>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <h2 class="subtitle">Unidades</h2>
+                <div class="projects__grid">
+
+                    <article class="projects__item">
+                         <a href="../ProyectoDA/unidades/Unidad1.html.html"><img src="../ProyectoDA/img/img1.2.jpg"  class="projects__img" loading="lazy"></a>
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Unidad1</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <a href="../ProyectoDA/unidades/Unidad1.html"><img src="../ProyectoDA/img/img2.jpg" class="projects__img" loading="lazy"></a>
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Unidad2</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <a href="../ProyectoDA/unidades/Unidad1.html"><img src="../ProyectoDA/img/img3.jpg" class="projects__img" loading="lazy"></a>
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Unidad3</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <a href="../ProyectoDA/unidades/Unidad1.html"><img src="../ProyectoDA/img/img4.jpg" class="projects__img" loading="lazy"></a>
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Unidad4</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <a href="Proyectos.html"><img src="../ProyectoDA/img/img5.jpg" class="projects__img" loading="lazy"></a>
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Proyectos</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+<div class="fixed-buttons">
+    <a href="#sobre-mi" class="nav__items">Sobre mi</a>
+</div>
+<section id="sobre-mi" class="testimony container">
+    <h2 class="subtitle">Autor</h2>
+    <div class="testimony__box">
+        <div class="testimony__text">
+            <h3 class="testimony__name">
+                <i class="fas fa-user"></i> 
+                Valeria López Cisneros
+            </h3>
+            <p class="testimony__verification">Estudiante de Ingeniería en Sistemas Computacionales.</p>
+            <p class="testimony__review">Matrícula: 20050200</p>
+            <p class="testimony__review">Materia: Desarrollo de Apps Web</p>
+            <p class="testimony__review">Horario: 19:00 - 20:00 hrs</p>
+        </div>
+        <div class="testimony__image">
+            <img src="../ProyectoDA/img/img6.jpg" class="testimony__img">
+        </div>
     </div>
-
-    <div id="menu" class="menu">
-        <a href="#" onclick="mostrarInformacion('github')">1. GitHub Pages</a>
-        <a href="#" onclick="mostrarInformacion('netlify')">2. Netlify</a>
-        <a href="#" onclick="mostrarInformacion('vercel')">3. Vercel</a>
-        <a href="#" onclick="mostrarInformacion('wix')">4. Wix</a>
-        <a href="#" onclick="mostrarInformacion('wordpress')">5. WordPress.com</a>
-        <a href="#" onclick="mostrarInformacion('google')">6. Google Sites</a>
-        <a href="#" onclick="mostrarInformacion('cloudflare')">7. Cloudflare Pages</a>
-        <a href="#" onclick="mostrarInformacion('carrd')">8. Carrd</a>
+</section>
+    <footer class="footer">
+    <div class="container footer__grid">
+        <nav class="nav nav--footer">
+            <a class="nav__item nav__items nav__items--footer" href="index.html">Inicio</a>
+            <a class="nav__item nav__items nav__items--footer" href="#subtitle">Unidades</a>
+        </nav>
+        
+        <section class="footer__contact">
+            <h3 class="footer__title">Contacto</h3>
+            <div class="footer__icons">
+                <span class="footer__container-icons"><a class="fab fa-google footer__icon" href="https://saltillo.tecnm.mx/"></a></span>
+                <span class="footer__container-icons"><a class="fab fa-facebook footer__icon" href="https://www.facebook.com/TecNMcampusSaltillo/"></a></span>
+            </div>
+        </section>
     </div>
+</footer>
 
-    <div id="informacion" class="informacion">
-        <button id="volver" class="boton-volver" onclick="volverAlMenu()">Volver al Menú</button>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-    <div class="informacion-fija">
-        <p>Nombre: Valeria López Cisneros | Número de control: 20050200 | Carrera: Ingeniería de Sistemas Computacionales</p>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
